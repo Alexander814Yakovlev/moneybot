@@ -17,7 +17,7 @@ async def start(message: types.Message):
 @dp.message_handler(commands='help')
 async def help(message: types.Message):
     await message.bot.send_message(message.from_user.id, '''Список команд:\n\n/spent + сумма - добавить расход
-/earn + сумма - добавить доход\n/history - история операций
+/earned + сумма - добавить доход\n/history - история операций
     ''')
 
 @dp.message_handler(commands=('spent', 's', 'earned', 'e'), commands_prefix='!/')
